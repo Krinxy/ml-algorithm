@@ -6,3 +6,5 @@ sklearn
 scipy
 librosa
 pydub
+hmmlearn
+python_speech_features
