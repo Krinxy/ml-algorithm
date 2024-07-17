@@ -26,7 +26,7 @@ def plottingkmeans(data: np.ndarray, labels: np.ndarray, center: np.ndarray):
 if __name__ == '__main__':
     data = np.random.rand(100, 2) * 100
     clusters = 5
-    _, labels, centers = kmeans_algorithm(data, clusters)
+    _, labels, centers = kmeans_algorithm(data, clusters)       # _ is just data
     print('Labels of data:')
     print(labels)
     print('Center of cluster:')
