@@ -14,7 +14,7 @@ def DynamicTimeWrap(audio_file: str, segmentlength: int = 5000):
     for start_time in range(0, len(audio), segment_length):
         end_time = start_time + segment_length
         segment = audio[start_time:end_time]
-        segment.export('temp_segment.wav', format='wav')        # Save(DTW)
+        segment.export('temp_segment.wav', format='wav')        # Save(segment)
 
         # Start DTW
         segment_abtastwerte, sr = librosa.load('temp_segment.wav')
