@@ -3,3 +3,6 @@ matplotlib
 matplotlib.pyplot
 cv2
 sklearn
+scipy
+librosa
+pydub
