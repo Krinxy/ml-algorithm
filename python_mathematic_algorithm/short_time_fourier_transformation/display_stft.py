@@ -31,7 +31,7 @@ def plot_spectrogram_random_audio(audio_signal:np.ndarray = 0, fs: int=1000, dur
 if __name__ == '__main__':
     plot_spectrogram_random_audio()
 
-    # TODO: Implement randomdata fft into plot
+    # TODO: Implement randomdata fft into plotting
  
     randomdata = np.random.randint(0, 100, 100)
     fft_data = FastFourierTransformation(randomdata)

@@ -13,12 +13,6 @@ def Array_Maximum_filter(data: np.ndarray, size: int = 0, stencil_size: tuple = 
     return filtered_data
 
 
-def Matrix_Maximum_filter(data: np.ndarray, x_shape_size: int = 0, y_shape_size: int = 0):
-    filtered_data = maximum_filter(data, (x_shape_size, y_shape_size))
-
-    return filtered_data
-
-
 if __name__ == '__main__':
     data = np.random.randint(0, 100, 100)
     # print(data)
