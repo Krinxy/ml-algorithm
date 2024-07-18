@@ -88,8 +88,8 @@ def segment_words(data: np.ndarray, debug: bool = True):
 
         if sample > 0.005:
             newword = np.append(newword,data[i])
-        if sample < 0.005 and len(newword) != 0:
-            words.append(newword)
-            newword = np.array([])
+        # if sample < 0.005 and len(newword) != 0:
+        #     words.append(newword)
+        #    newword = np.array([])
     
     return words

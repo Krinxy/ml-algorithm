@@ -1,7 +1,9 @@
+import time
+
 from prepare_data import getfiles
 from preprocess import *
 from features import *
-import time
+
 
 # Prepare Data
 start_duration = time.time()
@@ -21,6 +23,8 @@ segments = segment_words(resa)
 # Features
 for segment in segments:
     features(segment)
+
+print(segments)
 
 end_duration = time.time()
 print('Time Duration in seconds: ', round(end_duration - start_duration, 2))
