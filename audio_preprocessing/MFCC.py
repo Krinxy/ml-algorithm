@@ -21,23 +21,23 @@ def MFCC(audio_file: str):
 
     log = librosa.power_to_db(fft_n_amount, ref=np.max)
 
-    n_mfcc = 26
+    n_mfcc = 800
     mfcc = librosa.feature.mfcc(S=log, n_mfcc=n_mfcc)
 
     # Anzeige der MFCCs
     plt.figure(figsize=(10, 4))
     # Wie sollte der MFCC nun aussehen?
-    # So?
+
     librosa.display.specshow(log, x_axis='time', sr=sr)
     plt.colorbar()
-    plt.title('MFCC')
+    plt.title('Log')
     plt.show()
     
-    # Oder so?
+    # so?
     librosa.display.specshow(mfcc, x_axis='time', sr=sr)
     plt.colorbar()
     plt.title('MFCC')
     plt.show()
 
-audio_file = 'audio_preprocessing/audios/talk_1.wav'
+audio_file = 'audio_preprocessing/audios/talk_2.wav'
 MFCC(audio_file)
